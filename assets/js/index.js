@@ -5,12 +5,9 @@ const $preview = document.querySelector('#preview');
 
 $inputForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const input = $input.value;
-
     $preview.innerHTML = "";
-    $preview.innerHTML = input;
+    $preview.innerHTML = $input.value;
     $output.innerHTML = "";
-
     const checkSVG = setInterval(() => {
         if ($preview.innerHTML.includes('<svg')) {
             const regex = /<!--(.*)-->/g;
@@ -18,4 +15,6 @@ $inputForm.addEventListener('submit', (e) => {
             clearInterval(checkSVG);
         }
     }, 100);
+    $input.value = '';
+    $input.focus();
 });

@@ -2,6 +2,19 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
+header .logo {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+header .logo img {
+    width: 100%;
+    height: 3.5rem;
+}
+header .text p {
+    margin: 0;
+}
 
 #input-form .d-flex {
     gap: .5rem;

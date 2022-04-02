@@ -15,6 +15,9 @@ header .logo img {
 header .text p {
     margin: 0;
 }
+main {
+    padding-top: 2rem;
+}
 
 #input-form .d-flex {
     gap: .5rem;

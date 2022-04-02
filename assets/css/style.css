@@ -1,0 +1,24 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#input-form .d-flex {
+    gap: .5rem;
+}
+
+#input-form .input-col {
+    flex: 1;
+}
+
+#input-form button {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+#preview {
+    font-size: 2rem;
+}

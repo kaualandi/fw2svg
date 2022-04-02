@@ -19,6 +19,10 @@ main {
     padding-top: 2rem;
 }
 
+button#icon-state {
+    margin-left: 1rem;
+}
+
 #input-form .d-flex {
     gap: .5rem;
 }
@@ -39,6 +43,14 @@ textarea {
     font-size: 2rem;
 }
 
+.nostyle {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
 @media (prefers-color-scheme: dark) {
     body, .form-control, .form-control:disabled, .form-control[readonly] {
         background-color: #1a1b1b;
@@ -46,6 +58,9 @@ textarea {
     }
     .form-control:focus {
         background-color: #333333;
+        color: #fff;
+    }
+    button {
         color: #fff;
     }
 }

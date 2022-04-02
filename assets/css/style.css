@@ -22,3 +22,18 @@ textarea {
 #preview {
     font-size: 2rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151513;
+        color: #fff;
+    }
+    .form-control {
+        background-color: #1a1b1b;
+        color: #fff;
+    }
+    .form-control:disabled, .form-control[readonly] {
+        background-color: #1a1b1b;
+        color: #fff;
+    }
+}

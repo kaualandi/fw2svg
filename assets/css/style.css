@@ -24,16 +24,11 @@ textarea {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #151513;
-        color: #fff;
-    }
-    .form-control {
+    body, .form-control, .form-control:disabled, .form-control[readonly] {
         background-color: #1a1b1b;
         color: #fff;
     }
-    .form-control:disabled, .form-control[readonly] {
-        background-color: #1a1b1b;
-        color: #fff;
+    .form-control:focus {
+        background-color: #333333;
     }
 }

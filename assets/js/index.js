@@ -11,6 +11,9 @@ $inputForm.addEventListener('submit', (e) => {
     $preview.innerHTML = $input.value;
     $output.innerHTML = "";
     $iconState.removeEventListener('click', copyToClipboard);
+    $iconState.style.display = 'none';
+    $iconState.classList.remove('zoom-in');
+    $iconState.classList.remove('zoom-out');
     const checkSVG = setInterval(() => {
         if ($preview.innerHTML.includes('<svg')) {
             const regex = /<!--(.*)-->/g;
@@ -26,14 +29,21 @@ $inputForm.addEventListener('submit', (e) => {
 });
 
 function copyToClipboard(text) {
+    $iconState.classList.remove('zoom-in');
+    $iconState.classList.remove('zoom-out');
     $iconState.innerHTML = '<i class="fa-solid fa-spinner-third fa-spin"></i>';
     navigator.clipboard.writeText(text).then(function () {
         $iconState.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     }, function (err) {
         $iconState.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
     }).finally(() => {
+        $iconState.classList.add('zoom-in');
         setTimeout(() => {
-            $iconState.innerHTML = '<i class="fa-solid fa-copy"></i>';
+            $iconState.classList.remove('zoom-in');
+            setTimeout(() => {
+                $iconState.classList.add('zoom-out');
+                $iconState.innerHTML = '<i class="fa-solid fa-copy"></i>';
+            }, 2000);
         }, 1000);
     });
 }

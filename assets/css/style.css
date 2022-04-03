@@ -51,6 +51,28 @@ textarea {
     margin: 0;
     background: transparent;
 }
+.zoom-in {
+    animation: zoom-in .5s;
+}
+.zoom-out {
+    animation: zoom-out .5s;
+}
+@keyframes zoom-in {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+@keyframes zoom-out {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.8);
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     body, .form-control, .form-control:disabled, .form-control[readonly] {

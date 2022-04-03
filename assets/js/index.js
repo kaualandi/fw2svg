@@ -31,5 +31,9 @@ function copyToClipboard(text) {
         $iconState.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     }, function (err) {
         $iconState.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
+    }).finally(() => {
+        setTimeout(() => {
+            $iconState.innerHTML = '<i class="fa-solid fa-copy"></i>';
+        }, 1000);
     });
 }

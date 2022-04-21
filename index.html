@@ -71,9 +71,13 @@
                     </div>
                 </div>
                 <div class="md-3">
-                    <h3>Output <button id="icon-state" aria-label="copiar para área de transferência" class="nostyle"><i class="fa-solid fa-copy"></i></button></h3>
+                    <h3>Output <button id="icon-state" class="nostyle" aria-label="copiar para área de transferência"><i class="fa-solid fa-copy"></i></button></h3>
                     <textarea readonly class="form-control" id="output" rows="12"></textarea>
                 </div>
+            </div>
+            <div class="history mt-3">
+                <h3>Histórico <button id="icon-clear-history" class="nostyle" aria-label="limpar histórico"><i class="fa-solid fa-broom"></i></button></h3>
+                <div id="history-list"></div>
             </div>
         </main>
         <footer class="mt-3 text-center">
@@ -83,5 +87,4 @@
 
     <script src="./assets/js/index.js"></script>
 </body>
-
 </html>

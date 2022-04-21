@@ -19,7 +19,7 @@ main {
     padding-top: 2rem;
 }
 
-button#icon-state {
+button#icon-state, button#icon-clear-history {
     margin-left: 1rem;
     font-size: 1.2rem;
 }
@@ -44,6 +44,21 @@ textarea {
     font-size: 2rem;
 }
 
+#history-list {
+    overflow-x: auto;
+    display: flex;
+}
+#history-list .history-item {
+    padding: .5rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+#history-list .history-item+ .history-item {
+    margin-left: 1rem;
+}
+.italic {
+    font-style: italic;
+}
 .nostyle {
     text-decoration: none;
     border: none;
@@ -51,6 +66,7 @@ textarea {
     margin: 0;
     background: transparent;
 }
+
 .zoom-in {
     animation: zoom-in .5s;
 }

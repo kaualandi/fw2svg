@@ -7,6 +7,8 @@ const $iconClearHistory = document.querySelector('#icon-clear-history');
 $iconState.style.display = 'none';
 $iconClearHistory.style.display = 'none';
 
+document.querySelector('#FWVersion').innerHTML = `v${FontAwesomeKitConfig.version}`;
+
 renderHistory();
 
 $inputForm.addEventListener('submit', (e) => {

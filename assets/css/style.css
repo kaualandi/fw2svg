@@ -19,6 +19,10 @@ main {
     padding-top: 2rem;
 }
 
+input, textarea {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 button#icon-state, button#icon-clear-history {
     margin-left: 1rem;
     font-size: 1.2rem;

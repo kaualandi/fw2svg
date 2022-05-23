@@ -1,6 +1,6 @@
 <h1 align="center">Bem Vindo ao FontAwasome to SVG 👋</h1>
 
-> Transforme QUALQUER ícone do FontAwesome em SVG.
+> Transforme QUALQUER ícone do FontAwesome em SVG. <br>
 > FontAwasome Pro v6.1.1
 
 ### 🏠 [Demo (Github Pages)](https://kaualandi.github.io/fw2svg/)

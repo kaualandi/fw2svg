@@ -71,11 +71,9 @@ textarea {
     background: transparent;
 }
 
+/* ANIMATIONS */
 .zoom-in {
     animation: zoom-in .5s;
-}
-.zoom-out {
-    animation: zoom-out .5s;
 }
 @keyframes zoom-in {
     0%, 100% {
@@ -84,6 +82,9 @@ textarea {
     50% {
         transform: scale(1.3);
     }
+}
+.zoom-out {
+    animation: zoom-out .5s;
 }
 @keyframes zoom-out {
     0%, 100% {

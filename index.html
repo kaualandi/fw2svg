@@ -82,9 +82,9 @@
             <div class="tricks mt-3">
                 <h3>CSS</h3>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg">
+                    <div class="col-6 col-sm-3 col-md-4">
                         <span class="fs-5">Normalizar tamanho</span>
-                        <textarea readonly class="form-control" rows="6">
+                        <textarea placeholder="Normalizar tamanho" readonly class="form-control" rows="6">
 .svg-inline--fa {
     display: inline-block;
     height: 1em;
@@ -94,11 +94,11 @@
                     </div>
                     <div class="col-6 col-sm-3 col-md-4">
                         <span class="fs-5">Animação de spin</span>
-                        <textarea readonly class="form-control" rows="6">
+                        <textarea placeholder="Animação de spin" readonly class="form-control" rows="6">
 .fa-spin {
-    animation: spin 2s infinite;
+    animation: fa-spin 2s infinite;
 }
-@keyframes spin {
+@keyframes fa-spin {
     0% {
         transform: rotate(0deg);
     }
@@ -107,12 +107,150 @@
     }
 }</textarea>
                     </div>
-                    <div class="col-6 col-sm-3 col-md-4"></div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de spin reverso</span>
+                        <textarea placeholder="Animação de spin reverso" readonly class="form-control" rows="6">
+.fa-spin-reverse {
+    animation: fa-spin-reverse 2s infinite linear;
+}
+@keyframes fa-spin-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-359deg);
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de spin pausado</span>
+                        <textarea placeholder="Animação de spin pausado" readonly class="form-control" rows="6">
+.fa-spin-pulse {
+    animation: fa-spin-pulse 1s infinite steps(8);
+}
+@keyframes fa-spin-pulse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de batimento</span>
+                        <textarea placeholder="Animação de batimento" readonly class="form-control" rows="6">
+.fa-beat {
+    animation: fa-beat 1s infinite alternate;
+}
+@keyframes fa-beat {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de fade</span>
+                        <textarea placeholder="Animação de fade" readonly class="form-control" rows="6">
+.fa-fade {
+    animation: fa-fade 1s infinite alternate;
+}
+@keyframes fa-fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .4;
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de fade com batimento</span>
+                        <textarea placeholder="Animação de fade com batimento" readonly class="form-control" rows="6">
+.fa-beat-fade {
+    animation: fa-beat-fade 1s infinite alternate;
+}
+@keyframes fa-beat-fade {
+    0% {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de salto</span>
+                        <textarea placeholder="Animação de salto" readonly class="form-control" rows="6">
+.fa-bounce {
+    animation: fa-bounce 1s infinite alternate;
+}
+@keyframes fa-bounce {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+        transform: scale(0.9, 1.1) translateY(-0.5em);
+    }
+    50% {
+        transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+        transform: scale(1) translateY(-0.125em);
+    }
+    64% {
+        transform: scale(1) translateY(0);
+    }
+    to {
+        transform: scale(1) translateY(0);
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de giro</span>
+                        <textarea placeholder="Animação de giro" readonly class="form-control" rows="6">
+.fa-flip {
+    animation: fa-flip 1s infinite alternate;
+}
+@keyframes fa-flip {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}</textarea>
+                    </div>
+                    <div class="col-6 col-sm-3 col-md-4">
+                        <span class="fs-5">Animação de sacudir</span>
+                        <textarea placeholder="Animação de sacudir" readonly class="form-control" rows="6">
+.fa-beat-fade {
+    animation: fa-beat-fade 1s infinite alternate;
+}
+@keyframes fa-beat-fade {
+    0% {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}</textarea>
+                    </div>
                 </div>
             </div>
         </main>
         <footer class="mt-3 text-center">
-            <p>&copy; Copyright - <a href="https://kaualf.netlify.app">Kauã Landi</a></p>
+            <p>&copy; Copyright - <a href="https://kaualf.com">Kauã Landi</a></p>
         </footer>
     </div>
 

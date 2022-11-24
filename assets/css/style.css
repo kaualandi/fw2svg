@@ -74,6 +74,10 @@ a.nostyle {
     color: #000;
 }
 
+.items .item+.item {
+    margin-top: 1rem;
+}
+
 /* ANIMATIONS */
 .zoom-in {
     animation: zoom-in .5s;

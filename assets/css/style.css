@@ -70,6 +70,9 @@ textarea {
     margin: 0;
     background: transparent;
 }
+a.nostyle {
+    color: #000;
+}
 
 /* ANIMATIONS */
 .zoom-in {
@@ -104,7 +107,7 @@ textarea {
         background-color: #333333;
         color: #fff;
     }
-    button {
+    button, a.nostyle {
         color: #fff;
     }
 }

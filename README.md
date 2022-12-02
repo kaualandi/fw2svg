@@ -3,11 +3,11 @@
 > Transforme QUALQUER ícone do FontAwesome em SVG. <br>
 > FontAwesome Pro v6.2.1
 
-### 🏠 [Demo (Github Pages)](https://kaualandi.github.io/fw2svg/)
+### 🏠 [Demo](https://fw2svg.kaualf.com/)
 
 ## 👤 Autor
 
-* Website: <https://kaualf.netlify.app>
+* Website: <https://kaualf.com>
 * Github: [@kaualandi](https://github.com/kaualandi)
 * LinkedIn: [@kaualandi](https://linkedin.com/in/kaualandi)
 * Instagram: [@kaua.landi](https://www.instagram.com/kaua.landi/)

@@ -15,7 +15,7 @@ window.FontAwesomeKitConfig = {
     "v4shim": {
         "enabled": false
     },
-    "version": "6.4.2"
+    "version": "6.5.2"
 };
 ! function() {
     ! function() {

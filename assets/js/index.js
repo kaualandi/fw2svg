@@ -30,6 +30,7 @@ $inputForm.addEventListener('submit', (e) => {
             $iconState.style.display = 'inline-block';
             $iconState.addEventListener('click', () => copyToClipboard(text));
             clearInterval(checkSVG);
+            copyToClipboard(text);
         }
     }, 100);
     $input.value = '';
@@ -104,4 +105,16 @@ function clearHistory() {
     localStorage.removeItem('history');
     $iconClearHistory.style.display = 'none';
     renderHistory();
+}
+
+getIconByURL();
+function getIconByURL() {
+    const url = new URL(window.location.href);
+    const icon = url.searchParams.get('icon');
+    if (icon) {
+        $input.value = icon;
+        $inputForm.querySelector('button[type="submit"]').click();
+    }
+
+    window.history.pushState({}, document.title, window.location.pathname);
 }
